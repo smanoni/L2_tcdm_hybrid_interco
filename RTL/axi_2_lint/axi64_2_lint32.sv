@@ -217,6 +217,7 @@ module axi64_2_lint32
       .slave_size_i    ( AW_SIZE_i     ),
       .slave_burst_i   ( AW_BURST_i    ),
       .slave_lock_i    ( AW_LOCK_i     ),
+      .slave_atop_i    ( '0            ), // no atomics on this path
       .slave_cache_i   ( AW_CACHE_i    ),
       .slave_qos_i     ( AW_QOS_i      ),
       .slave_id_i      ( AW_ID_i       ),
